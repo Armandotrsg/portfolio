@@ -313,6 +313,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+  animation: blinkTextCursor 0.9s steps(44) infinite normal;
+}
+
+.writing {
+  border-right: 0.08em solid #666;
 }
 
 .fixed-height {
@@ -329,6 +334,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .fixed-height {
     height: 150px;
   }
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
 
 /************ Skills Css ************/

@@ -1,11 +1,13 @@
 import {useState, useEffect} from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [' web developer', ' software engineer', ' full stack developer'];
+    const toRotate = ['4th semester student', 'software engineer', 'web developer'];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100); /* To know how fast each letter will come after another */
     const period = 2000;
@@ -33,7 +35,7 @@ export const Banner = () => {
           setIsDeleting(true);
           //setIndex(prevIndex => prevIndex - 1);
           setDelta(period);
-        } else if (isDeleting && updatedText === ' ') {
+        } else if (isDeleting && updatedText === '') {
           setIsDeleting(false);
           setLoopNum(loopNum + 1);
           //setIndex(1);
@@ -48,12 +50,17 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Hi There!</span>
-                        <div className='fixed-height'>
-                          <h1>{`I'm Armando a `}<span className="wrap">{text}</span></h1>
-                        </div>
-                        <p>Example Text</p>
-                        <button role="link" className="vvd">Let's connect <ArrowRightCircle size={25} /> </button>
+                        <TrackVisibility>
+                          {({isVisible}) =>
+                          <div className={isVisible ? "animated_animated animate_fadeIn" : ""}>
+                            <span className="tagline">Hi There!</span>
+                            <div className='fixed-height'>
+                              <h1>{`I'm Armando, a `} <span className="txt-rotate"><span className={isDeleting ? "writing" : "wrap"}>{text}</span></span></h1>
+                            </div>
+                            <p>Example Text</p>
+                            <button role="link" className="vvd">Let's connect <ArrowRightCircle size={25} /> </button>
+                          </div> }
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={'https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/header-img.svg'} alt="banner" />
