@@ -253,6 +253,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 .banner .tagline {
   font-weight: 700;
@@ -329,8 +330,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     height: 270px;
   }
 }
+@media screen and (min-width: 410px) {
+  .fixed-height {
+    height: 350px;
+  }
+}
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 560px) {
+  .fixed-height {
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fixed-height {
+    height: 335px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fixed-height {
+    height: 230px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fixed-height {
+    height: 170px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   .fixed-height {
     height: 150px;
   }
