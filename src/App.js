@@ -12,6 +12,7 @@ import { BrowserRouter, Navigate,
   useLocation,
   useNavigate,
   useParams } from 'react-router-dom';
+  import { Home } from './components/HomeComponent';
 
 
 function App() {
@@ -19,10 +20,7 @@ function App() {
     <BrowserRouter>
       <div className='App'>
         <NavBar />
-        <Banner />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Home />
         <Footer />
       </div>
     </BrowserRouter>
