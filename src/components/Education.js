@@ -47,6 +47,7 @@ export const Education = () => {
                 <Row >
                     <Col className="text-center">
                         <h1>Education</h1>
+                        <p>Currently studying my 4th semester in the university</p>
                     </Col>
                 </Row>
                 <Row className="align-items-center justify-content-center">

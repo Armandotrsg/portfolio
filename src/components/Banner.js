@@ -57,7 +57,7 @@ export const Banner = () => {
                                   <div className='fixed-height'>
                                     <h1>I'm Armando a <span className="txt-rotate"><span className={isDeleting ? "writing" : "wrap"}>{text}</span></span></h1>
                                   </div>
-                            <p>Example Text</p>
+                            <p>Nice to meet you!</p>
                             <button role="link" className="vvd">Let's connect <ArrowRightCircle size={25} /> </button>
                           </div> }
                         </TrackVisibility>

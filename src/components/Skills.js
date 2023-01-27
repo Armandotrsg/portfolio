@@ -5,6 +5,7 @@ import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import { SkillsContent } from "../shared/Skills";
 
 
 export const Skills = () => {
@@ -27,6 +28,16 @@ export const Skills = () => {
           items: 1
         }
     };
+
+    const SkillsCard = ({img, title}) => {
+        return(
+            <div className="item">
+                <img src={img} alt={title} />
+                <h5>{title}</h5>
+            </div>
+        )
+    }
+
     return(
         <section className="skill" id="skills">
             <Container>
@@ -34,24 +45,13 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p>I have worked with all of these technologies and frameworks <br />and I keep learning outside the university taking different courses that teach me new technologies</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                                <div className="item">
-                                    <img src={meter1} alt="C++" />
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter1} alt="Example 2" />
-                                    <h5>Brand 2</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter1} alt="Example 3" />
-                                    <h5>C++</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={"https://cdn.worldvectorlogo.com/logos/arduino-1.svg"} alt="Example 4" className="img-fluid" />
-                                    <h5>Python</h5>
-                                </div>
+                                {SkillsContent.map((item, index) => {
+                                    return(
+                                        <SkillsCard key={index} {...item} />
+                                    )
+                                })}
                             </Carousel>
                         </div>
                     </Col>

@@ -699,13 +699,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
 }
 
-.educationCard {
+.education p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+}
+
+.education .educationCard {
   margin-top: 1.2rem;
   height: 18rem !important;
   background-color: #151515 !important;
 }
 
-.cardBody {
+.education .cardBody {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -713,7 +720,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
 }
 
-.gradient-text {
+.education .gradient-text {
   /* Fallback: Set a background color. */
   background-color: red;
   
