@@ -14,7 +14,7 @@ export const Footer = () => {
                         <div className="mt-4">
                             <SocialNav />
                         </div>
-                        <p> CopyRight 2023. All rights reserved</p>
+                        <p>©Copyrights 2023. All rights reserved</p>
                     </Col>
                 </Row>
             </Container>

@@ -5,6 +5,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { ProjectsInfo } from "../shared/Projects";
+import { Awards } from "../shared/Awards";
 
 export const Projects = () => {
     const [title, setTitle] = useState("Projects");
@@ -15,7 +16,7 @@ export const Projects = () => {
             setTitle("Projects");
             setDescription("These are a few of the projects I have worked on. I have worked on a variety of projects, from web development to different simulations projects. I have also worked on projects that involve machine learning and data science.");
         } else if (key === "awards") {
-            setTitle("Awards");
+            setTitle("Awards & Participations");
             setDescription("I'm so proud of the different awards I have received. I have received awards for my academic achievements, as well as some of my personal projects.");
         } else if (key === "volunteerings") {
             setTitle("Volunteerings");
@@ -39,7 +40,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="projects" onClick={() => handleTabChange("projects")}>Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="awards" onClick={() => handleTabChange("awards")}>Awards</Nav.Link>
+                      <Nav.Link eventKey="awards" onClick={() => handleTabChange("awards")}>Awards & Contests</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="volunteerings" onClick={() => handleTabChange("volunteerings")}>Volunteerings</Nav.Link>
@@ -62,7 +63,18 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="awards">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Row>
+                      {
+                        Awards.map((award, index) => {
+                          return(
+                            <ProjectCard
+                              key={index}
+                              {...award}
+                            />
+                          )
+                        })
+                      }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="volunteerings">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
