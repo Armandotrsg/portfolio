@@ -6,6 +6,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { ProjectsInfo } from "../shared/Projects";
 import { Awards } from "../shared/Awards";
+import { Volunteerings } from "../shared/Volunteerings";
 
 export const Projects = () => {
     const [title, setTitle] = useState("Projects");
@@ -77,7 +78,19 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="volunteerings">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Row>
+                        {
+                          Volunteerings.map((volunteering, index) => {
+                              return(
+                                <ProjectCard
+                                  key={index}
+                                  {...volunteering}
+                                />
+                              )
+                            }
+                          )
+                        }
+                      </Row>
                     </Tab.Pane>
                     
                   </Tab.Content>
