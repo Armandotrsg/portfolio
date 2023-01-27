@@ -42,9 +42,9 @@ export const NavBar = () => {
                             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
                         {/* </LinkContainer> */}
                         {/* <LinkContainer> */}
-                            <Nav.Link href="#awards" className={activeLink === 'awards' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('awards')}>Awards & Projects</Nav.Link>
+                            <Nav.Link href="#awards" className={activeLink === 'awards' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('aboutme')}>About Me</Nav.Link>
                         {/* </LinkContainer> */}
-                            <Nav.Link href="#education" className="navbar-link">Education</Nav.Link>
+                            {/* <Nav.Link href="#education" className={activeLink === 'education' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Education</Nav.Link> */}
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">

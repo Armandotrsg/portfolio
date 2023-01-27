@@ -1,4 +1,4 @@
-import { Card, Button, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 
 export const Education = () => {
     const edu = [
@@ -42,7 +42,7 @@ export const Education = () => {
     };
 
     return (
-        <section className="education">
+        <section className="education" id="education">
             <Container>
                 <Row >
                     <Col className="text-center">

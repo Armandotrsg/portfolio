@@ -439,7 +439,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 33.333333%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -490,6 +490,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
+
+.proj-imgbx a {
+  color: #fff;
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -535,6 +540,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.projectCard-img {
+  width: 18rem !important;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s ease-in-out;
 }
 
 /************ Contact Css ************/
@@ -710,6 +723,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 1.2rem;
   height: 18rem !important;
   background-color: #151515 !important;
+  box-shadow: 0px 0px 30px 1px rgba(219, 129, 241, 0.3);
 }
 
 .education .cardBody {
