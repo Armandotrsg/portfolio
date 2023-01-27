@@ -383,7 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
-.skill h2 {
+.skill h1 {
 	font-size: 45px;
 	font-weight: 700;
 }
@@ -417,7 +417,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
 }
-.project h2 {
+.project h1 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
@@ -558,7 +558,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact img {
   width: 92%;
 }
-.contact h2 {
+.contact h1 {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
@@ -717,6 +717,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
+}
+
+.education h1 {
+  font-size: 45px;
+	font-weight: 700;
 }
 
 .education .educationCard {

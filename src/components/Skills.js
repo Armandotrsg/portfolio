@@ -41,7 +41,7 @@ export const Skills = () => {
                 <Row>
                     <Col>
                         <div className="skill-bx">
-                            <h2>Skills</h2>
+                            <h1>Skills</h1>
                             <p>I have worked with all of these technologies and frameworks <br />and I keep learning outside the university taking different courses that teach me new technologies</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 {SkillsContent.map((item, index) => {
