@@ -1,10 +1,8 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import {LinkContainer} from 'react-router-bootstrap'
-import githubLogo from '../assets/img/githubLogo.svg';
-import linkedin from '../assets/img/nav-icon1.svg';
-import instagram from '../assets/img/nav-icon3.svg';
 import logo from '../assets/img/logo.svg';
+import { SocialNav } from "./SocialNav";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -47,17 +45,7 @@ export const NavBar = () => {
                             {/* <Nav.Link href="#education" className={activeLink === 'education' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Education</Nav.Link> */}
                     </Nav>
                     <span className="navbar-text">
-                        <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/">
-                                <img src={linkedin} alt="linkedin" />
-                            </a>
-                            <a href="/">
-                                <img src={githubLogo} alt="github" />
-                            </a>
-                            <a href="/">
-                                <img src={instagram} alt="twitter" />
-                            </a>
-                        </div>
+                        <SocialNav />
                         <button role="link" className="vvd">
                             <span>Let's Connect</span>
                         </button>
