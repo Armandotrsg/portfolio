@@ -8,7 +8,9 @@ export const Footer = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col sm={6}>
-                        <img src={logo} alt="Logo" className="mt-3" />
+                        <a href="/home">
+                            <img src={logo} alt="Logo" className="mt-3" />
+                        </a>
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <div className="mt-4">

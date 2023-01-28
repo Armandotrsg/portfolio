@@ -650,7 +650,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
+
 .newsletter-bx {
   background: #FFFFFF;
   border-radius: 55px;
@@ -778,5 +782,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+/************ Error Css ************/
+.errorImg {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+
+@media screen and(min-height: 600px) {
+  .errorImg {
+    padding-top: 5rem;
+    padding-bottom: 17rem;
+  }
+  
 }
 

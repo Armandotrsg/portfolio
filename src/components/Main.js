@@ -1,11 +1,11 @@
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 import { Home } from "./HomeComponent";
+import { NotFound } from "./NotFound";
 
 import {
     Route,
     Routes,
-    Navigate,
     useLocation,
     useNavigate,
     useParams,
@@ -28,7 +28,7 @@ const Main = () => {
             <NavBar />
             <Routes>
                 <Route path="/home" element={<Home />} />
-                <Route path="*" element={<Navigate to="/home" />} />{" "}
+                <Route path="*" element={<NotFound />} />{/* <Navigate to="/home" /> */}
             </Routes>
             <Footer />
         </div>
