@@ -19,8 +19,8 @@ export const Projects = () => {
         } else if (key === "awards") {
             setTitle("Awards & Participations");
             setDescription("I'm so proud of the different awards I have received. I have received awards for my academic achievements, as well as some of my personal projects.");
-        } else if (key === "volunteerings") {
-            setTitle("Volunteerings");
+        } else if (key === "helping") {
+            setTitle("Helping");
             setDescription("I have been involved in a variety of volunteering projects. I have volunteered mainly helping the environment and helping the community.");
         }
     }
@@ -41,10 +41,10 @@ export const Projects = () => {
                       <Nav.Link eventKey="projects" onClick={() => handleTabChange("projects")}>Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="awards" onClick={() => handleTabChange("awards")}>Awards & Contests</Nav.Link>
+                      <Nav.Link eventKey="awards" onClick={() => handleTabChange("awards")}>Awards</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="volunteerings" onClick={() => handleTabChange("volunteerings")}>Volunteerings</Nav.Link>
+                      <Nav.Link eventKey="helping" onClick={() => handleTabChange("helping")}>Helping</Nav.Link>
                     </Nav.Item>
                     
                   </Nav>
@@ -77,7 +77,7 @@ export const Projects = () => {
                       }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="volunteerings">
+                    <Tab.Pane eventKey="helping">
                       <Row>
                         {
                           Volunteerings.map((volunteering, index) => {

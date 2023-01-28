@@ -453,7 +453,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 17px 0;
   color: #fff;
   width: 100%;
-  font-size: 17px;
+  font-size: 15px;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
@@ -461,6 +461,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
+
+@media screen and (min-width: 768px) {
+  .project .nav.nav-pills .nav-link {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project .nav.nav-pills .nav-link {
+    font-size: 125%;
+  }
+}
+
 .project .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;

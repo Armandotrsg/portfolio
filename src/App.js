@@ -1,26 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { NavBar } from './components/NavBar';
-import { Footer } from './components/Footer';
-import { Home } from './components/HomeComponent';
+import Main from './components/Main';
 
-import { BrowserRouter, Navigate,
-  Route,
-  Routes,
-  useLocation,
-  useNavigate,
-  useParams } from 'react-router-dom';
-  
+import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <div className='App'>
-        <NavBar />
-        <Home />
-        <Footer />
-      </div>
+      <React.Fragment>
+        <Main />
+      </React.Fragment>
     </BrowserRouter>
   );
 }

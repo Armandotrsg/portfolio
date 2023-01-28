@@ -27,7 +27,8 @@ export const Banner = () => {
         }, delta);
     
         return () => { clearInterval(ticker) };
-      }, [text])
+        // eslint-disable-next-line
+      }, [text]) 
     
       const tick = () => {
         let i = loopNum % toRotate.length;
