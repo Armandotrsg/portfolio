@@ -9,8 +9,17 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ['4th semester student', 'software engineer', 'web developer'];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100); /* To know how fast each letter will come after another */
+    const [delta, setDelta] = useState(225 - Math.random() * 100); /* To know how fast each letter will come after another */
     const period = 2000;
+    const [greetingMessage, setGreetingMessage] = useState('Nice to see you here!');
+
+    //Select a random greeting message ever time the page is loaded
+    useEffect(() => {
+        const greetingMessages = ['Nice to see you here!', 'Welcome!', 'Nice to have you back!', 'Good to see you again!', 'Welcome back!'];
+        const randomIndex = Math.floor(Math.random() * greetingMessages.length);
+        setGreetingMessage(greetingMessages[randomIndex]);
+    }, []);
+    
     
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -39,7 +48,7 @@ export const Banner = () => {
           setIsDeleting(false);
           setLoopNum(loopNum + 1);
           //setIndex(1);
-          setDelta(500);
+          setDelta(225 - Math.random() * 100);
         } else {
           //setIndex(prevIndex => prevIndex + 1);
         }
@@ -57,7 +66,7 @@ export const Banner = () => {
                                   <div className='fixed-height'>
                                     <h1>I'm Armando a <span className="txt-rotate"><span className={isDeleting ? "writing" : "wrap"}>{text}</span></span></h1>
                                   </div>
-                            <p>Nice to meet you!</p>
+                            <p>{greetingMessage}</p>
                             <button role="link" className="vvd">Let's connect <ArrowRightCircle size={25} /> </button>
                           </div> }
                         </TrackVisibility>

@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import {LinkContainer} from 'react-router-bootstrap'
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/myLogo.png';
 import { SocialNav } from "./SocialNav";
 
 export const NavBar = () => {
