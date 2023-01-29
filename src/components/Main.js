@@ -9,6 +9,7 @@ import {
     useLocation,
     useNavigate,
     useParams,
+    Navigate,
 } from "react-router-dom";
 
 function withRouter(Component) {
@@ -27,8 +28,9 @@ const Main = () => {
         <div className="App">
             <NavBar />
             <Routes>
+                <Route path="/" element={<Navigate to="/home" />} />
                 <Route path="/home" element={<Home />} />
-                <Route path="*" element={<NotFound />} />{/* <Navigate to="/home" /> */}
+                <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
         </div>
