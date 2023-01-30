@@ -3,10 +3,9 @@ import colorSharp from "../assets/img/color-sharp2.png";
 import { Card } from "react-bootstrap";
 import { Profiles } from "../shared/Profiles";
 import React from "react";
+import {Contact} from "./Contact";
 
 export const Connect = () => {
-
-
     const profileCard = ({name, user, img, link}) => {
         return (
             <Col md={6} >
@@ -52,6 +51,7 @@ export const Connect = () => {
                     <img src={colorSharp} alt="color sharp" className="background-image-right"/>
                 </Container>
             </section>
+            <Contact />
         </React.Fragment>
         
     );
