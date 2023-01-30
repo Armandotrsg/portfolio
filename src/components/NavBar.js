@@ -15,7 +15,7 @@ export const NavBar = () => {
         if (path === '/home') {
             setActiveLink('home');
         } else if (path === '/aboutme') {
-            setActiveLink('awards');
+            setActiveLink('aboutme');
         } else if (path === '/connect') {
             setActiveLink('connect');
         }
@@ -58,7 +58,7 @@ export const NavBar = () => {
                         
                             <Nav.Link href="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
                         
-                            <Nav.Link href="#awards" className={activeLink === 'awards' ? 'active navbar-link' : 'navbar-link'}>About Me</Nav.Link>
+                            <Nav.Link href="/aboutme" className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'}>About Me</Nav.Link>
                         
                     </Nav>
                     <span className="navbar-text">
