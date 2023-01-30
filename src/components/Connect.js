@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import colorSharp from "../assets/img/color-sharp2.png";
 import { Card } from "react-bootstrap";
 import { Profiles } from "../shared/Profiles";
+import React from "react";
 
 export const Connect = () => {
 
@@ -17,9 +18,7 @@ export const Connect = () => {
                                 <Card.Title className="gradient-text my-3"><h5>{name}</h5></Card.Title>
                                 <Card.Text>
                                    <strong>
-                                        
-                                            {user}
-                                        
+                                        {user}
                                    </strong>
                                 </Card.Text>
                             </div>
@@ -31,23 +30,29 @@ export const Connect = () => {
     }
 
     return (
-        <header className="connect">
-            <Container>
-                <Row>
-                    <Col xs={12}>
-                        <h1>Connect with me!</h1>
-                    </Col>
-                </Row>
-                <Row >
-                    {
-                        Profiles.map((profile, index) => {
-                            return profileCard({...profile, key: index})
-                        })
-                    }
-                </Row>
-            </Container>
-            
-            <img src={colorSharp} alt="color sharp" className="background-image-right"/>
-        </header>
+        <React.Fragment>
+            <header className="connect">
+                <Container>
+                    <Row>
+                        <Col xs={12}>
+                            <h1>Connect with me!</h1>
+                        </Col>
+                    </Row>
+                </Container>
+            </header>
+            <section className="connect">
+                <Container>
+                    <Row >
+                        {
+                            Profiles.map((profile, index) => {
+                                return profileCard({...profile, key: index})
+                            })
+                        }
+                    </Row>
+                    <img src={colorSharp} alt="color sharp" className="background-image-right"/>
+                </Container>
+            </section>
+        </React.Fragment>
+        
     );
 };
