@@ -1,6 +1,6 @@
 import githubLogo from "../assets/img/githubLogo.svg";
-import linkedin from "../assets/img/nav-icon1.svg";
-import instagram from "../assets/img/nav-icon3.svg";
+import linkedin from "../assets/img/linkedinNav.svg";
+import instagram from "../assets/img/instagramNav.svg";
 
 export const SocialNav = () => {
     return (

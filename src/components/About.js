@@ -26,7 +26,7 @@ export const AboutMe = () => {
                         </Col>
                         <Col xs={12} md={6}>
                             <p>
-                                Hello! My name is <strong>Armando Terrazas</strong> and I am a software engineer. I am currently a student at the <strong>Tecnológico de Monterrey</strong>, pursuing a <strong>B.S. degree in Computer Science and Technology</strong>. I am passionate about software development and I am always looking for new opportunities to learn and grow.
+                                Hello! My name is <strong>Armando Terrazas</strong> and I am a software engineer. I am currently a student at the <strong>Tecnológico de Monterrey</strong> in Zapopan, Jalisco, pursuing a <strong>B.S. degree in Computer Science and Technology</strong>. I am passionate about software development and I am always looking for new opportunities to learn and grow.
                                 <br />
                                 In my free time I enjoy spending time at the gym with my friends, and sharing a good meal with my family. I also enjoy playing video games and watching movies.
                                 <br />

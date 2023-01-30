@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import logo from '../assets/img/myLogo.png';
+import logo from '../assets/img/logo.png';
 import { SocialNav } from "./SocialNav";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -47,8 +47,9 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
+
                 <Navbar.Brand href="/home">
-                    <img src={logo} alt="logo" />
+                    <img src={logo} alt="logo" className="imgLogo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
