@@ -7,24 +7,22 @@ export const Education = () => {
             date: "2021 - 2025",
             gpa: "GPA: 98/100",
             title: "B.S. in Computer Science and Technology",
-            img: "https://upload.wikimedia.org/wikipedia/commons/4/47/Logo_del_ITESM.svg"
         },
         {
             name: "Tecmilenio Campus Zapopan",
             date: "2018 - 2022",
             gpa: "GPA: 98/100",
             title: "High School Diploma",
-            img: "../assets/img/tecmilenio.png"
         },
     ];
 
-    const EduCard = ({ name, date, gpa, title, img }) => {
+    const EduCard = ({ name, date, gpa, title }) => {
         return (
             <Col xs={12} md={6} xl={4}>
                 <Card className="educationCard">
                     <Card.Body className="cardBody">
                         <div>
-                            <Card.Title className="gradient-text">{name}</Card.Title>
+                            <Card.Title className={name === "Tecnológico de Monterrey, Campus Guadalajara" ? "gradient-text-tec" : "gradient-text-tecmilenio"}>{name}</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">
                                 {date}
                             </Card.Subtitle>

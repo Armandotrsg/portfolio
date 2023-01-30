@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { useNavigate } from 'react-router-dom';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -55,6 +56,8 @@ export const Banner = () => {
         }
       }
 
+    const navigate = useNavigate();
+
     return (
         <header className="banner" id="home">
             <Container>
@@ -68,7 +71,7 @@ export const Banner = () => {
                                     <h1>I'm Armando a <span className="txt-rotate"><span className={isDeleting ? "writing" : "wrap"}>{text}</span></span></h1>
                                   </div>
                             <p>{greetingMessage}</p>
-                            <button role="link" className="vvd">Let's connect <ArrowRightCircle size={25} /> </button>
+                            <button role="link" className="vvd" onClick={() => navigate('/connect')}>Let's connect <ArrowRightCircle size={25} /> </button>
                           </div> }
                         </TrackVisibility>
                     </Col>

@@ -2,10 +2,24 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import logo from '../assets/img/myLogo.png';
 import { SocialNav } from "./SocialNav";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home');
+    const [activeLink, setActiveLink] = useState('');
     const [scrolled, setScrolled] = useState(false);
+
+    const location = useLocation();
+
+    useEffect(() => {
+        const path = location.pathname;
+        if (path === '/home') {
+            setActiveLink('home');
+        } else if (path === '/aboutme') {
+            setActiveLink('awards');
+        } else if (path === '/connect') {
+            setActiveLink('connect');
+        }
+    },[location.pathname])
 
     useEffect(() => {
         const onScroll = () => {
@@ -24,6 +38,12 @@ export const NavBar = () => {
         setActiveLink(link);
     }
 
+    const navigate = useNavigate();
+    const handleClick = () => {
+        onUpdateActiveLink('connect');
+        navigate('/connect');
+    }
+
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
@@ -36,14 +56,14 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         
-                            <Nav.Link href="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
+                            <Nav.Link href="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
                         
-                            <Nav.Link href="#awards" className={activeLink === 'awards' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('aboutme')}>About Me</Nav.Link>
+                            <Nav.Link href="#awards" className={activeLink === 'awards' ? 'active navbar-link' : 'navbar-link'}>About Me</Nav.Link>
                         
                     </Nav>
                     <span className="navbar-text">
                         <SocialNav />
-                        <button role="link" className="vvd">
+                        <button role="link" className="vvd" onClick={handleClick}>
                             <span>Let's Connect</span>
                         </button>
                     </span>

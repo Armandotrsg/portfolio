@@ -2,6 +2,7 @@ import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 import { Home } from "./HomeComponent";
 import { NotFound } from "./NotFound";
+import { Connect } from "./Connect";
 
 import {
     Route,
@@ -30,6 +31,7 @@ const Main = () => {
             <Routes>
                 <Route path="/" element={<Navigate to="/home" />} />
                 <Route path="/home" element={<Home />} />
+                <Route path="/connect" element={<Connect />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />

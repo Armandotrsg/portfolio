@@ -32,7 +32,7 @@ export const Projects = () => {
                     <Col>
                     <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div className={isVisible ? "animate__animated animate__pulse": ""}>
                 <h1>{title}</h1>
                 <p>{description}</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="projects">

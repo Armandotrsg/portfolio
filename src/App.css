@@ -254,13 +254,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 8rem 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
+
+@media screen and (min-width: 768px) {
+  .banner {
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-image: url('./assets/img/banner-bg.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -762,7 +773,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
 }
 
-.education .gradient-text {
+.education .gradient-text-tec {
   /* Fallback: Set a background color. */
   background-color: red;
   
@@ -770,7 +781,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #56CCF2;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
   
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -783,6 +793,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
+
+.education .gradient-text-tecmilenio {
+  /* Fallback: Set a background color. */
+  background-color: red;
+  
+  /* Create the gradient. */
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ec367, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
 
 /************ Error Css ************/
 .errorImg {
@@ -799,3 +831,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 }
 
+/************ Connect Css ************/
+.connect {
+  margin-top: 0;
+  padding: 8rem 0 100px 0;
+  text-align: center;
+}
+
+.connect h1 {
+  font-size: 250%;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.connect .profileCard {
+  margin-top: 1.2rem;
+  height: 18rem !important;
+  background-color: #151515 !important;
+  box-shadow: 0px 0px 30px 1px rgba(219, 129, 241, 0.3);
+  transition: 0.5s;
+}
+
+.connect .profileCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 30px 1px rgba(219, 129, 241, 0.8);
+  color: #fff;
+}
+
+.connect .cardBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.profileImg {
+  width: 98px;
+}
+
+.linkedinImg {
+  width: 200px;
+}
+
+.cardLink {
+  color: #fff;
+  padding: 0.75rem;
+}
+
+
+
+/* * {
+  border: 2px solid red;
+} */
