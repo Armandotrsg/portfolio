@@ -30,11 +30,11 @@ const Main = () => {
         <div className="App">
             <NavBar />
             <Routes>
-                <Route path="" element={<Navigate to="/home" />} />
-                <Route path="/" element={<Navigate to="/home" />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/connect" element={<Connect />} />
                 <Route path="/aboutme" element={<AboutMe />} />
+                <Route path="" element={<Navigate to="/home" />} />
+                <Route path="/" element={<Navigate to="/home" />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
