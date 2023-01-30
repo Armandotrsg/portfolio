@@ -7,7 +7,7 @@ import React from 'react';
 
 function App() {
   return (
-    <BrowserRouter > {/* basename='/portfolio' */}
+    <BrowserRouter basename='/'> {/* basename='/portfolio' */}
       <React.Fragment>
         <Main />
       </React.Fragment>
