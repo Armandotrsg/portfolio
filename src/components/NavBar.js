@@ -8,7 +8,6 @@ import resume from '../assets/pdf/resume.pdf';
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('');
     const [scrolled, setScrolled] = useState(false);
-
     const location = useLocation();
 
     useEffect(() => {
@@ -44,7 +43,7 @@ export const NavBar = () => {
     }
 
     return (
-        <Navbar expand="lg" className={scrolled || window.innerWidth < 767 ? "scrolled" : ""}>
+        <Navbar expand="lg" collapseOnSelect={true} className={scrolled || window.innerWidth < 767 ? "scrolled" : ""}>
             <Container>
                 <Navbar.Brand as={Link} to="/home">
                     <img src={logo} alt="logo" className="imgLogo" />
@@ -54,9 +53,9 @@ export const NavBar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home</Nav.Link>
-                            <Nav.Link as={Link} to="/aboutme" className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'}>About Me</Nav.Link>
-                            <Nav.Link as={Link} to="/connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'}>Connect</Nav.Link>
+                            <Nav.Link eventKey={1} as={Link} to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home </Nav.Link>
+                            <Nav.Link eventKey={2} as={Link} to="/aboutme" className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'} >About Me </Nav.Link>
+                            <Nav.Link eventKey={3} as={Link} to="/connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} >Connect </Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <SocialNav />
