@@ -1,8 +1,6 @@
 import {useState, useEffect} from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 import { useNavigate } from 'react-router-dom';
 
 export const Banner = () => {
@@ -63,17 +61,12 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={7} xl={8}>
-                        <TrackVisibility>
-                          {({isVisible}) =>
-                          <div className={isVisible ? "animated_animated animate_fadeIn" : ""}>
                             <span className="tagline">Hi There!</span>
                                   <div className='fixed-height'>
                                     <h1>I'm Armando a <span className="txt-rotate"><span className={isDeleting ? "writing" : "wrap"}>{text}</span></span></h1>
                                   </div>
                             <p>{greetingMessage}</p>
                             <button role="link" className="vvd" onClick={() => navigate('/connect')}>Let's connect <ArrowRightCircle size={25} /> </button>
-                          </div> }
-                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={5} xl={4}>
                         <img src={'https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/header-img.svg'} alt="banner" />

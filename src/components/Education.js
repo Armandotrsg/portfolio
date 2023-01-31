@@ -5,13 +5,13 @@ export const Education = () => {
         {
             name: "Tecnológico de Monterrey, Campus Guadalajara",
             date: "2021 - 2025",
-            gpa: "GPA: 98/100",
+            gpa: "GPA: 4.0/4.0",
             title: "B.S. in Computer Science and Technology",
         },
         {
             name: "Tecmilenio Campus Zapopan",
             date: "2018 - 2022",
-            gpa: "GPA: 98/100",
+            gpa: "GPA: 4.0/4.0",
             title: "High School Diploma",
         },
     ];
@@ -52,8 +52,6 @@ export const Education = () => {
                     {edu.map((school, index) => {
                         return <EduCard key={index} {...school} />;
                     })}
-                    {/* q: Why is this not working? */}
-                    {/* a: Because you are trying to map over an object, not an array. */}
                 </Row>
             </Container>
         </section>

@@ -1,7 +1,7 @@
 import malaria from "../assets/img/Malaria.png";
 import stealthecase from "../assets/img/stealthecase.jpeg";
 import rescuehelper from "../assets/img/rescuehelper.png";
-import liedetector from "../assets/img/liedetector.jpeg";
+import liedetector from "../assets/img/liedetector.jpg";
 import magicgurumis from "../assets/img/magicgurumis.png";
 import garbage from "../assets/img/garbage.png";
 
