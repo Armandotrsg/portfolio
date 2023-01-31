@@ -7,6 +7,7 @@ import colorSharp from "../assets/img/color-sharp2.png"
 
 export const AboutMe = () => {
     const navigate = useNavigate()
+
     return (
         <React.Fragment>
             <header className="about">
