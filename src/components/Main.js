@@ -33,10 +33,8 @@ const Main = () => {
                 <Route exact path="/home" element={<Home />} />
                 <Route exact path="/connect" element={<Connect />} />
                 <Route exact path="/aboutme" element={<AboutMe />} />
-                <Route exact path="" element={<Navigate to="/home" />} />
-                <Route exact path="/" element={<Navigate to="/home" />} />
-                <Route exact path="/portfolio" element={<Navigate to="/home" />} />
-                <Route path="*" element={<NotFound />} />
+                <Route path="/portfolio/*" element={<NotFound />} />
+                <Route path="*" element={<Navigate to="/home" />} />
             </Routes>
             <Footer />
         </div>
