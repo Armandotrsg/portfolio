@@ -322,6 +322,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
+  margin-top: 2.3rem;
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -335,6 +336,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
+
+@media screen and (min-width: 768px) {
+  .banner img {
+    margin-top: 0;
+    animation: updown 3s linear infinite;
+  }
+}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
   animation: blinkTextCursor 0.9s steps(44) infinite normal;
