@@ -12,7 +12,7 @@ export const NavBar = () => {
 
     useEffect(() => {
         const path = location.pathname;
-        if (path === '/home') {
+        if (path === '/home' || path === '/portfolio') {
             setActiveLink('home');
         } else if (path === '/aboutme') {
             setActiveLink('aboutme');
