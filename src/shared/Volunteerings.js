@@ -4,18 +4,21 @@ import profesor from "../assets/img/profesor.jpeg";
 
 export const Volunteerings = [
     {
-        title: "Tree Reforestation Volunteer",
-        description: "Volunteered to plant trees to restore the \"Bosque de la Primavera\" in Jalisco, Mexico.",
-        img: primavera,
+        title: "English and French Teacher",
+        description: "Volunteered to teach English and French to children in the Language Learning Center In Tecnológico deMonterrey.",
+        img: profesor,
+        date: "Sep 2020 - Nov 2020",
     },
     {
         title: "Park Restoration Volunteer",
         description: "Volunteered to restore the \"Centinela\" park in Jalisco, Mexico.",
         img: centinela,
+        date: "Feb 2020",
     },
     {
-        title: "English and French Teacher",
-        description: "Volunteered to teach English and French to children in the Language Learning Center In Tecnológico deMonterrey.",
-        img: profesor,
-    }
+        title: "Tree Reforestation Volunteer",
+        description: "Volunteered to plant trees to restore the \"Bosque de la Primavera\" in Jalisco, Mexico.",
+        img: primavera,
+        date: "June 2019",
+    },
 ]

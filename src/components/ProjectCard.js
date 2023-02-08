@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, img, url }) => {
+export const ProjectCard = ({ title, description, img, url, date }) => {
     console.log(url);
     if (typeof url !== 'undefined') {
         return (
@@ -10,7 +10,7 @@ export const ProjectCard = ({ title, description, img, url }) => {
                     <a href={url} target="_blank" rel="noreferrer">
                         <div className="proj-txtx">
                             <h4>{title}</h4>
-                            <span>{description}</span>
+                            <span>{description}<br />{date}</span>
                         </div>
                     </a>
                 </div>
@@ -24,7 +24,7 @@ export const ProjectCard = ({ title, description, img, url }) => {
 
                     <div className="proj-txtx">
                         <h4>{title}</h4>
-                        <span>{description}</span>
+                        <span>{description}<br />{date}</span>
                     </div>
                 </div>
             </Col>
