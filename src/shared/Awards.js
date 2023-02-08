@@ -12,7 +12,7 @@ export const Awards = [
     },
     {
         title: "Stella Pre-incubation Phase 1 Scholarship",
-        description: "Received a scholarship from Tecnol´ogico de Monterrey for a team project: IoT Eartquake Detection System",
+        description: "Received a scholarship from Tecnológico de Monterrey for a team project: IoT Eartquake Detection System",
         img: rescue,
         date: "Nov 2022",
     },
