@@ -12,6 +12,18 @@ export const SkillsContent = [
         img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
     },
     {
+        title: "TypeScript",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+    },
+    {
+        title: "Bootsrap",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
+    },
+    {
+        title: "Tailwind",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg",
+    },
+    {
         title: "React",
         img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
     },
@@ -26,10 +38,6 @@ export const SkillsContent = [
     {
         title: "Matlab",
         img: "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
-    },
-    {
-        title: "Bootsrap",
-        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
     },
     {
         title: "Git",
