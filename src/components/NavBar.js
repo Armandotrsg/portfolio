@@ -19,6 +19,7 @@ export const NavBar = () => {
         } else if (path === '/connect') {
             setActiveLink('connect');
         }
+        return () => setActiveLink('');
     },[location.pathname])
 
     useEffect(() => {
@@ -53,9 +54,9 @@ export const NavBar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                            <Nav.Link eventKey={1} as={Link} to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home </Nav.Link>
-                            <Nav.Link eventKey={2} as={Link} to="/aboutme" className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'} >About Me </Nav.Link>
-                            <Nav.Link eventKey={3} as={Link} to="/connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} >Connect </Nav.Link>
+                            <Nav.Link eventKey={1} as={Link} id="home" to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}>Home </Nav.Link>
+                            <Nav.Link eventKey={2} as={Link} id="aboutme" to="/aboutme" className={activeLink === 'aboutme' ? 'active navbar-link' : 'navbar-link'}>About Me </Nav.Link>
+                            <Nav.Link eventKey={3} as={Link} id="connect" to="/connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'}>Connect </Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <SocialNav />

@@ -50,7 +50,8 @@ export const Projects = () => {
                                         eventKey="projects"
                                         onClick={() =>
                                             handleTabChange("projects")
-                                        }>
+                                        }
+                                        className="light-shadow">
                                         Projects
                                     </Nav.Link>
                                 </Nav.Item>
@@ -59,7 +60,8 @@ export const Projects = () => {
                                         eventKey="awards"
                                         onClick={() =>
                                             handleTabChange("awards")
-                                        }>
+                                        }
+                                        className="light-shadow">
                                         Awards
                                     </Nav.Link>
                                 </Nav.Item>
@@ -68,7 +70,8 @@ export const Projects = () => {
                                         eventKey="helping"
                                         onClick={() =>
                                             handleTabChange("helping")
-                                        }>
+                                        }
+                                        className="light-shadow">
                                         Helping
                                     </Nav.Link>
                                 </Nav.Item>
