@@ -357,18 +357,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 350px;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 431px) {
   .fixed-height {
     height: 270px;
   }
 }
-@media screen and (min-width: 410px) {
-  .fixed-height {
-    height: 350px;
-  }
-}
 
-@media screen and (min-width: 560px) {
+
+@media screen and (min-width: 480px) {
   .fixed-height {
     height: 220px;
   }
