@@ -40,19 +40,19 @@ export const Contact = () => {
                         <Form ref={form} onSubmit={sendEmail}>
                             <Row>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" name="user_firstName" placeholder="First Name" required />
+                                    <input type="text" name="user_firstName" placeholder="First Name*" required />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" name="user_lastName" placeholder="Last Name" required />
+                                    <input type="text" name="user_lastName" placeholder="Last Name*" required />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="email" name="user_email" placeholder="Email Address" required />
+                                    <input type="email" name="user_email" placeholder="Email Address*" required />
                                 </Col>
                                 <Col sm={6} className="px-1">
                                     <input type="text" name="user_phone" placeholder="Phone Number" />
                                 </Col>
                                 <Col>
-                                    <textarea name="message" rows={6} placeholder="Message" required />
+                                    <textarea name="message" rows={6} placeholder="Message*" required />
                                     <button type="submit"><span>{buttonText}</span></button>
                                     {
                                         status.message &&
