@@ -5,6 +5,12 @@ import hackmty from "../assets/img/hackmty.jpeg";
 
 export const Awards = [
     {
+        title: "Academic Merit Award",
+        description: "Three time consecutive awarded for one of the best GPA in the Science and Engineering Major in Tecnológico de Monterrey.",
+        img: academic,
+        date: "March 2023",
+    },
+    {
         title: "ICPC Training Camp Mexico 2023",
         description: "2 week intensive training camp for competitive programming",
         img: tcmx,
@@ -15,12 +21,6 @@ export const Awards = [
         description: "Received a scholarship from Tecnológico de Monterrey for a team project: IoT Eartquake Detection System",
         img: rescue,
         date: "Nov 2022",
-    },
-    {
-        title: "Academic Merit Award",
-        description: "Two time consecutive awarded for one of the best GPA in the Science and Engineering Major in Tecnológico de Monterrey.",
-        img: academic,
-        date: "Sep 2022",
     },
     {
         title: "HackMTY 2021",
