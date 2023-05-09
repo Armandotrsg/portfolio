@@ -4,8 +4,16 @@ import rescuehelper from "../assets/img/rescuehelper.png";
 import liedetector from "../assets/img/liedetector.jpg";
 import magicgurumis from "../assets/img/magicgurumis.png";
 import garbage from "../assets/img/garbage.png";
+import kueski from "../assets/img/kueski.png";
 
 export const ProjectsInfo = [
+    {
+        title: "ARCO Rights Management for Kueski",
+        description: "A system able to make CRUD operations in a database for Kueski.",
+        img: kueski,
+        url: "https://kueski-arco-dashboard.vercel.app/clientes",
+        date: "Feb 2023 - May 2023",
+    },
     {
         title: "Non-Invasive Lie Detector",
         description: "A machine learning model able to detect if someone is lying or not.",
