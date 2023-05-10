@@ -5,6 +5,7 @@ import liedetector from "../assets/img/liedetector.jpg";
 import magicgurumis from "../assets/img/magicgurumis.png";
 import garbage from "../assets/img/garbage.png";
 import kueski from "../assets/img/kueski.png";
+import exiliogame from "../assets/img/exiliogame.png";
 
 export const ProjectsInfo = [
     {
@@ -12,6 +13,13 @@ export const ProjectsInfo = [
         description: "A system able to make CRUD operations in a database for Kueski.",
         img: kueski,
         url: "https://kueski-arco-dashboard.vercel.app/clientes",
+        date: "Feb 2023 - May 2023",
+    },
+    {
+        title: "Exilio Game",
+        description: "A game developed in Unity of a space shooter with a Firebase DB.",
+        img: exiliogame,
+        url: "https://github.com/Armandotrsg/ExilioGame",
         date: "Feb 2023 - May 2023",
     },
     {

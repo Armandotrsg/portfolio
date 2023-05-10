@@ -1,3 +1,5 @@
+import qwik from "../assets/img/qwik.svg";
+
 export const SkillsContent = [
     {
         title: "HTML",
@@ -28,6 +30,10 @@ export const SkillsContent = [
         img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
     },
     {
+        title: "Qwik",
+        img: qwik,
+    },
+    {
         title: "C++",
         img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
     },
@@ -47,4 +53,8 @@ export const SkillsContent = [
         title: "Arduino",
         img: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
     },
+    {
+        title: "Unity",
+        img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg",
+    }
 ]
