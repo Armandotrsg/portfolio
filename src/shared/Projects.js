@@ -6,8 +6,32 @@ import magicgurumis from "../assets/img/magicgurumis.png";
 import garbage from "../assets/img/garbage.png";
 import kueski from "../assets/img/kueski.png";
 import exiliogame from "../assets/img/exiliogame.png";
+import seifen from "../assets/img/seifen.png";
+import themidpoint from "../assets/img/themidpoint.png";
+import decafAI from "../assets/img/decafAI.png";
 
 export const ProjectsInfo = [
+    {
+        title: "Decaf AI Chatbot",
+        description: "An AI chatbot developed for Decaf Wallet.",
+        img: decafAI,
+        url: "https://decaf-ai.vercel.app/login",
+        date: "June 2023",
+    },
+    {
+        title: "Seifen Landing Page",
+        description: "A landing page developed for Seifen Detergent.",
+        img: seifen,
+        url: "https://seifen.vercel.app",
+        date: "May 2023 - Present",
+    },
+    {
+        title: "The Midpoint",
+        description: "A website developed for The Midpoint.",
+        img: themidpoint,
+        url: "https://themidpoint.vercel.app",
+        date: "May 2023 - Present",
+    },
     {
         title: "ARCO Rights Management for Kueski",
         description: "A system able to make CRUD operations in a database for Kueski.",
