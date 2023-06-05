@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2f3a8ae2.css",
-    "main.js": "/portfolio/static/js/main.d27db4ad.js",
+    "main.js": "/portfolio/static/js/main.ae7dd64f.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/academic.jpeg": "/portfolio/static/media/academic.d2e9797704ee55e8d08a.jpeg",
     "static/media/me.jpeg": "/portfolio/static/media/me.21a667643e704a08f790.jpeg",
@@ -9,16 +9,18 @@
     "static/media/color-sharp.png": "/portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/error404.png": "/portfolio/static/media/error404.15c815664abf40c7df4c.png",
+    "static/media/seifen.png": "/portfolio/static/media/seifen.7ecb289bcc0a62a2cb35.png",
     "static/media/exiliogame.png": "/portfolio/static/media/exiliogame.b9d40f32d8b61900d32e.png",
     "static/media/banner-bg.png": "/portfolio/static/media/banner-bg.cc1273af450504afe755.png",
     "static/media/garbage.png": "/portfolio/static/media/garbage.217cd13eb3d39c717edc.png",
     "static/media/Malaria.png": "/portfolio/static/media/Malaria.e20ad012bde89a05333e.png",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.1501682dcbceaa721db6.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.547cff715a6de35c9b58.pdf",
     "static/media/primavera.jpeg": "/portfolio/static/media/primavera.eeeb54e027a7285e4e5b.jpeg",
     "static/media/centinela.jpeg": "/portfolio/static/media/centinela.c389d510ce813eeac261.jpeg",
     "static/media/tcmx.jpeg": "/portfolio/static/media/tcmx.957977064442c8232b96.jpeg",
     "static/media/rescue.jpeg": "/portfolio/static/media/rescue.ebb20c79203eb65ca483.jpeg",
     "static/media/mail.png": "/portfolio/static/media/mail.d5e28d0804401f5d3737.png",
+    "static/media/themidpoint.png": "/portfolio/static/media/themidpoint.7221cd5f4a13f7d09ba5.png",
     "static/media/magicgurumis.png": "/portfolio/static/media/magicgurumis.370913ec2cb160627947.png",
     "static/media/CentraNo2-Bold.ttf": "/portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
@@ -26,6 +28,7 @@
     "static/media/footer-bg.png": "/portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/hackmty.jpeg": "/portfolio/static/media/hackmty.34cc28f9ccba87332a25.jpeg",
     "static/media/kueski.png": "/portfolio/static/media/kueski.606c5b0d00d381d9924f.png",
+    "static/media/decafAI.png": "/portfolio/static/media/decafAI.3c3a35cde9267db0af6e.png",
     "static/media/profesor.jpeg": "/portfolio/static/media/profesor.11d7676310d3916ad673.jpeg",
     "static/media/stealthecase.jpeg": "/portfolio/static/media/stealthecase.2fc2a02aba1681ea9494.jpeg",
     "static/media/rescuehelper.png": "/portfolio/static/media/rescuehelper.d3e338cad475e965e707.png",
@@ -43,11 +46,11 @@
     "static/media/githubLogo.svg": "/portfolio/static/media/githubLogo.3cf9fd2a95a50e3d7dce5056ff4e9ee0.svg",
     "static/media/linkedinNav.svg": "/portfolio/static/media/linkedinNav.721d5414c26365f117e71d46b6641cb2.svg",
     "main.2f3a8ae2.css.map": "/portfolio/static/css/main.2f3a8ae2.css.map",
-    "main.d27db4ad.js.map": "/portfolio/static/js/main.d27db4ad.js.map",
+    "main.ae7dd64f.js.map": "/portfolio/static/js/main.ae7dd64f.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f3a8ae2.css",
-    "static/js/main.d27db4ad.js"
+    "static/js/main.ae7dd64f.js"
   ]
 }
