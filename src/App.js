@@ -6,6 +6,10 @@ import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 
 function App() {
+  function redirectToNewLink() {
+    window.location.href = "https://armando-terrazas-gomez.vercel.app";
+  }
+  redirectToNewLink();
   return (
     <BrowserRouter basename='/'> {/* basename='/portfolio' */}
       <React.Fragment>
